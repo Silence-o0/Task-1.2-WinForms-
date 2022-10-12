@@ -30,7 +30,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.MessageBox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -51,23 +50,11 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // MessageBox
-            // 
-            this.MessageBox.AutoSize = true;
-            this.MessageBox.Location = new System.Drawing.Point(326, 264);
-            this.MessageBox.Name = "MessageBox";
-            this.MessageBox.Size = new System.Drawing.Size(157, 20);
-            this.MessageBox.TabIndex = 2;
-            this.MessageBox.Text = "                                     ";
-            this.MessageBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MessageBox.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.MessageBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -82,7 +69,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label MessageBox;
     }
 }
 

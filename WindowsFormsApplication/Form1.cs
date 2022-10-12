@@ -19,18 +19,19 @@ namespace WindowsFormsApplication
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-     
-            this.Text = textBox1.Text;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
- 
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Text = $"Ви ввели число {textBox1.Text}";
+            try
+            {
+                MessageBox.Show($"Ви ввели число {Convert.ToInt32(textBox1.Text)}");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROR! Ввести можна лише ціле число.");
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
